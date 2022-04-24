@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nested Drag and Drop - Mini-Spec</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="css/base.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div id="bar">
+            <div class="flask">Dev Lab</div>
+            <h3 style="float: right;"></h3>
+            <div class="logo"></div>
+        </div>
+
+        <div id="stage">
+
+            <h1>Nested Drag and Drop</h1>
+
+            <div class="section">
+                <p>
+                    A picture says more than thousand words. We have prepared a screencast of the desired result.
+                    Have a look at it now.
+                </p>
+                <video src="media/nested-drag-and-drop.mp4" controls style="width: 100%; "></video>
+            </div>
+
+            <div class="section">
+                <h2>Task</h2>
+                <p>Create 2 "classes":</p>
+                <ul>
+                    <li>One class (container) creates draggable containers</li>
+                    <li>Other class (node) creates draggable nodes that can be dropped in instances of the latter</li>
+                </ul>
+                <p>
+                    Once an instance of node is dropped on an instance of container
+                    the node rests in the container and moves together with the container.
+                </p>
+                <p>When removed from the container the node will move independently again.</p>
+            </div>
+
+
+            <div class="section">
+                <h2>Prioritized goals</h2>
+                <h3>Must have</h3>
+                <ul>
+                    <li>Everything is generated programmatically</li>
+                    <li>"containers" are draggable</li>
+                    <li>"nodes" are draggable and can be dropped in instances of container</li>
+                    <li>Once a node is dropped on a container it becomes part of the container and "follows" its new parent</li>
+                    <li>Instances of node are detachable from the container</li>
+                </ul>
+
+                <h3>On best effort</h3>
+                <ul>
+                    <li>Allow dropping nodes from one container to the other</li>
+                    <li>Visually indicate valid drop targets. Highlight or set a different border when the dragged node enters a valid drop target</li>
+                    <li>Add some eye candy and make it look nice</li>
+                    <li>Try to have some fun with the task ;)</li>
+                </ul>
+
+            </div>
+
+            <div class="section constraints">
+                <h2>Constraints</h2>
+                <ul>
+                    <li>You may use <strong>any</strong> framework you want however we expect that you keep the dependencies to a minimum.</li>
+                    <li>Use the DOM (HTML/SVG). Do NOT use canvas</li>
+                    <li>Do NOT webpack a simple thing like this. It must run without having to trigger any build jobs or unnecessary scaffolding.</li>
+                    <li>
+                        <span style="color: #FF0000;">No markup allowed.</span>
+                        Everything is meant to be created programmatically
+                    </li>
+                    <li>
+                        Time: Spend no longer than 4 hours.
+                        We also accept partial solution as long as you tackle aspects
+                        of the task in ascending order. MUST HAVES come first.
+                    </li>
+                </ul>
+
+            </div>
+
+            <p>We hope you have some fun with this task.</p>
+
+        </div>
+        <div id="footer">
+            Do you have questions regarding the task? Don't hesitate to ask: <a href="mailto:emrah.somay@cloud.ionos.com?subject=DevTest:%20Nested%20Drag%20And%20Drop">emrah.somay@cloud.ionos.com</a>
+        </div>
+
+    </body>
+</html>

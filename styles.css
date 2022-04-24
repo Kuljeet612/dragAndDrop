@@ -1,0 +1,51 @@
+.btn {
+    background: darkgrey;  
+    margin: 5px;
+    border: 2px double #fff;
+    height: 24px;
+    color: #fff;
+    font-size: 14px;
+    cursor:pointer;
+}
+
+.container{
+    position: absolute;
+    display: inline-block;
+    height: 120px;
+    width: 240px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 12px;
+    background-color: lightgoldenrodyellow;      
+    border-top: 24px solid;
+}
+#parent {
+    height: 100vh;
+    width: 100vw;
+    background: cornflowerblue;
+}
+
+.node{
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    margin-top: 30px;   
+    height: 50px;
+    background-color: chocolate;
+    width: 60px;
+    border-radius: 6px;
+    border: 1px solid;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.highlight {    
+    opacity:0.8;    
+    transform: scale(1.1);        
+}
+button#createContainer:hover,
+button#createNode:hover {    
+    background-color: #fff;
+    color:black;
+    border: 2px double black;    
+}
